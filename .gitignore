@@ -1,0 +1,6 @@
+*.o
+boa/boa-0.94.13/src/boa
+boa/boa-0.94.13/src/boa_indexer
+boa/boa-0.94.13/src/lex.yy.c
+boa/boa-0.94.13/src/y.tab.c
+boa/boa-0.94.13/src/y.tab.h
