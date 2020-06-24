@@ -647,7 +647,7 @@ installBinary: $(DEPS_40)
 	mkdir -p "$(ME_VAPP_PREFIX)/bin" ; \
 	cp $(BUILD)/bin/roots.crt $(ME_VAPP_PREFIX)/bin/roots.crt ; \
 	mkdir -p "$(ME_ETC_PREFIX)" ; \
-	cp $(BUILD)/bin/self.* $(ME_ETC_PREFIX)/self.* ; \
+	cp $(BUILD)/bin/self.* $(ME_ETC_PREFIX)/; \
 	mkdir -p "$(ME_WEB_PREFIX)" ; \
 	cp src/web/index.html $(ME_WEB_PREFIX)/index.html ; \
 	cp src/web/favicon.ico $(ME_WEB_PREFIX)/favicon.ico ; \
@@ -660,7 +660,7 @@ installBinary: $(DEPS_40)
 	cp doc/dist/man/*.1 $(ME_VAPP_PREFIX)/doc/man/man1/*.1 ; \
 	mkdir -p "$(ME_MAN_PREFIX)/man1" ; \
 	rm -f "$(ME_MAN_PREFIX)/man1/*.1" ; \
-	ln -s "$(ME_VAPP_PREFIX)/doc/man/man1/*.1" "$(ME_MAN_PREFIX)/man1/*.1"
+	ln -s "$(ME_VAPP_PREFIX)/doc/man/man1/*.1" "$(ME_MAN_PREFIX)/man1/"
 
 #
 #   start
