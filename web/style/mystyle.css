@@ -4,7 +4,7 @@ body {
 
 .container {
   margin: 0;
-  background-color: #F4F4F4;
+
 }
 
 header {
@@ -59,7 +59,12 @@ li a:active {
   color: white;
 }
 
-li a:hover:not(.active) {
+li a:hover:{
+  background-color: #555;
+  color: white;
+}
+
+li a:focus{
   background-color: #555;
   color: white;
 }
