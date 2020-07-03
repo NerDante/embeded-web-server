@@ -68,3 +68,13 @@ li a:focus{
   background-color: #555;
   color: white;
 }
+
+.content_table {
+  margin: 0 auto;
+  align-items: center;
+}
+
+.subtitle {
+  margin: 0 auto;
+  text-align: center;
+}
