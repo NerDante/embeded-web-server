@@ -2,22 +2,25 @@ body {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container {
   margin: 0;
 
 }
 
 header {
-  margin: 0;
-  background-color: #01376B;
+  background-color: #292525;
   width: 100%;
   height: 60px;
 }
 
 header h1 {
-  margin: 0;
+  margin-left: 60px;
+  margin-top: 0;
   color: #fff;
-  text-align: center;
   line-height: 60px;
 }
 
@@ -32,6 +35,7 @@ header h1 {
   margin-left: 200px;
   height: 100%;
   padding: 10px;
+  background-color: #f2f2f2;
 }
 
 ul {
@@ -39,7 +43,7 @@ ul {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #f1f1f1;
+  background-color: #012C40;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -47,7 +51,7 @@ ul {
 
 li a {
   display: block;
-  color: #000;
+  color: #fff;
   padding: 8px 16px;
   text-decoration: none;
   font-weight: bolder;
@@ -77,4 +81,58 @@ li a:focus{
 .subtitle {
   margin: 0 auto;
   text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* 清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+/* 响应式布局 layout - 在屏幕宽度小于 600px 时， 设置为上下堆叠元素 */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }

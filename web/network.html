@@ -8,7 +8,7 @@
 	</head>
 	<body>
 			<header>
-				<h1>Embeded Web Demo</h1>
+					<h1>Embeded Web Demo</h1>
 			</header>
 
 			<div class="main">
@@ -18,8 +18,8 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="network.html">NetWork</a></li>
 							<li><a href="#">System</a></li>
-							<li><a href="#">example</a></li>
-							<li><a href="#">about</a></li>
+							<li><a href="#">Example</a></li>
+							<li><a href="#">About</a></li>
 						</ul>
 						</ul>
 					</nav>
@@ -29,24 +29,48 @@
 					<div>
 						<h2 class="subtitle">network config</h2>
 					</div>
-					<form action="/cgi-bin/network">
-						<table class="content_table">
-							<tr>
-								<td><label for="">ip_address</label></td>
-								<td><input type="text" ></td>
-							</tr>
-							<tr>
-								<td><label for="">netmask</label></td>
-								<td><input type="text" ></td>
-							</tr>
-							<tr>
-								<td><label for="">gateway</label></td>
-								<td><input type="text" ></td>
-							</tr>
-							<tr>
-								<td><input type="submit" value="submit"></td>
-							</tr>
-						</table>
+					<br/>
+					<form class="config_form" action="/cgi-bin/network">
+						<div class="row">
+							<div class="col-25">
+							  <label for="dhcp">DHCP</label>
+							</div>
+							<div class="col-75">
+							  <select id="dhcp" name="dhcp">
+								<option value="open">open</option>
+								<option value="close">close</option>
+							  </select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label class="form_label" for="">ip_address</label>
+							</div>
+							<div class="col-75">
+								<input type="text" >
+							</div>	
+						</div>
+						
+						<div class="row">
+							<div class="col-25">
+								<label for="">netmask</label>
+							</div>
+							<div class="col-75">
+								<input type="text" >
+							</div>							
+						</div>
+						<div class="row">
+							<div class="col-25">
+								<label for="">gateway</label>
+							</div>
+							<div class="col-75">
+								<input type="text" >
+							</div>	
+						</div>
+						<br/>
+						<div class="row">
+							<input type="submit" value="submit">
+						</div>																									
 					</form>
 				</div>
 			</div>
